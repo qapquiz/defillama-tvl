@@ -1,0 +1,12 @@
+{
+  "name": "defillama-tvl",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {},
+  "author": "@armariya",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/spl-governance": "^0.3.28",
+    "governance-idl-sdk": "^0.0.3"
+  }
+}
