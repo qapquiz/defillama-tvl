@@ -1,12 +1,19 @@
 {
   "name": "defillama-tvl",
-  "version": "0.1.0",
-  "main": "index.js",
-  "scripts": {},
-  "author": "@armariya",
-  "license": "MIT",
+  "module": "src/index.ts",
+  "type": "module",
+	"scripts": {
+		"dev": "bun run --hot src/index.ts"
+	},
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
   "dependencies": {
     "@solana/spl-governance": "^0.3.28",
-    "governance-idl-sdk": "^0.0.3"
+    "governance-idl-sdk": "^0.0.3",
+    "hono": "^4.5.4"
   }
 }
