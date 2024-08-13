@@ -50,3 +50,6 @@ dgov7NC8iaumWw3k8TkmLDybvZBCmd1qwxgLAGAsWxf
 We have 2 API for this.
 1. GET /tvl - Displays the cached TVL (a warning will be shown if the data is older than 30 days)
 2. POST /tvl - Updates the TVL for each DAO in the Governance Program IDs listed above. It will save the result in `tvl.json`
+
+#### Notes
+- **DO NOT FORGET** to create `.env` file with the content of `.env.example` and also please add `RPC_URL` in the `.env` file.
