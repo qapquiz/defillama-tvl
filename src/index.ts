@@ -29,7 +29,7 @@ app.get("/tvl", async (context) => {
 
 app.post("/tvl", async (context) => {
 	const governanceProgramId = GOVERNANCE_PROGRAM_ID.map(programId => new PublicKey(programId));
-	const daoWithTVLs: DAOWithTVL[][] = await Effect.runPromise(updateTVL([governanceProgramId[1]]));
+	const daoWithTVLs: DAOWithTVL[][] = await Effect.runPromise(updateTVL(governanceProgramId));
 	const daoWithTVLsFlatten = daoWithTVLs.flat();
 	const tvlFileContent: TVLFile = {
 		updatedTimestamp: Date.now(),
